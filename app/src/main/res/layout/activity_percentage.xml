@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF00FF"
+    tools:context=".percentage"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/E1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter a number"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/E2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter A number"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFF"
+        android:text="Find percentage"/>
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admobid">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

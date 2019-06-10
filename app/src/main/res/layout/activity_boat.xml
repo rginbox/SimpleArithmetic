@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".boat"
+    android:background="#7CFC00"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/E1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter distance"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/E2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter speed of the boat in still water"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/E3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter speed of the stream"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:text="Find time taken to cover distance upstream"/>
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:text="Find time taken to cover distance downstream"/>
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admobid">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

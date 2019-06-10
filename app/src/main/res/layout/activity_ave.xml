@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF0000"
+    tools:context=".ave">
+    <EditText
+        android:id="@+id/E1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a number"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:text="Find Average of first N natural number"/>
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:text="Find Average of squares of first N natural number"/>
+
+    <Button
+        android:id="@+id/B3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:text="Find Average of cubes of first N natural number" />
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/T3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admobid">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
